@@ -16,21 +16,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(!cart.length) return console.log("Your shopping cart is empty.")
-  var a = "In your cart, you have "
-
-  for(var i = 0; i<cart.length;i++){
-    if((i+1 === cart.length) && (i>0) ){
-      a = a + "and "
-    }
-
-     var item = Object.keys(cart[i])[0]
-     var s = item + " at $" + cart[i][item]
-    a = a + s
+  if(!cart.length) return console.log("Your shopping cart is empty.");
+  var a = "In your cart, you have ";
+  var strs = []
+  for(var item in cart){
+    strs.push(`${item} at $${cart[item]}`)
   }
-  a = a + "."
-  return console.log(a)
-
+  return a + strs.join() + ".";
 
 }
 
