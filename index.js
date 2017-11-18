@@ -42,7 +42,7 @@ function total() {
   var total = 0
   for(var i in cart){
     var key = Object.keys(cart[i])[0]
-    total += cart[i].key
+    total = total + cart[i][key]
   }
   console.log(total)
   // write your code here
