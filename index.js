@@ -19,8 +19,9 @@ function viewCart() {
   if(!cart.length) return console.log("Your shopping cart is empty.");
   var a = "In your cart, you have ";
   var strs = []
-  for(var item in cart){
-    var cost = cart[item];
+  for(var i in cart){
+    var item = Object.keys(cart[i])[0];
+    var cost = cart[i][item]
     strs.push(`${item} at $${cost}`)
   }
   var retValue = a + strs.join(",") + ".";
