@@ -22,7 +22,9 @@ function viewCart() {
   for(var item in cart){
     strs.push(`${item} at $${cart[item]}`)
   }
-  return a + strs.join() + ".";
+  var retValue = a + strs.join() + ".";
+  console.log(retValue);
+  return retValue;
 
 }
 
