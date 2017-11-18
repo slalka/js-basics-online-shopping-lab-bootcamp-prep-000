@@ -30,7 +30,7 @@ function viewCart() {
   else {
     strs[strs.length - 1] = "and " + strs[strs.length - 1];
     final = strs.join(", ")
-  } 
+  }
 
   var retValue = a + final + ".";
   console.log(retValue);
