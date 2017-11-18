@@ -20,7 +20,8 @@ function viewCart() {
   var a = "In your cart, you have ";
   var strs = []
   for(var item in cart){
-    strs.push(`${item} at $${cart[item]}`)
+    var cost = cart[item];
+    strs.push(`${item} at $${cost}`)
   }
   var retValue = a + strs.join() + ".";
   console.log(retValue);
