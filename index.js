@@ -24,7 +24,10 @@ function viewCart() {
     var cost = cart[i][item]
     strs.push(`${item} at $${cost}`)
   }
-  var retValue = a + strs.join(",") + ".";
+  var final = ""
+  if(strs.length == 1) final = strs[0];
+  if(strs.length == 2) final = strs.join(" and ");
+  var retValue = a + final + ".";
   console.log(retValue);
   return retValue;
 
