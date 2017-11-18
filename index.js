@@ -23,7 +23,7 @@ function viewCart() {
     var cost = cart[item];
     strs.push(`${item} at $${cost}`)
   }
-  var retValue = a + strs.join() + ".";
+  var retValue = a + strs.join(",") + ".";
   console.log(retValue);
   return retValue;
 
