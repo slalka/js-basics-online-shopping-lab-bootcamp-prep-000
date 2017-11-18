@@ -27,6 +27,10 @@ function viewCart() {
   var final = ""
   if(strs.length == 1) final = strs[0];
   else if(strs.length == 2) final = strs.join(" and ");
+  else {
+    strs[strs.length - 1] = "and " + strs[strs.length - 1];
+    final = strs.join(", ")
+  } 
 
   var retValue = a + final + ".";
   console.log(retValue);
