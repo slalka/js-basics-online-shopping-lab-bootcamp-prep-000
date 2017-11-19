@@ -44,7 +44,7 @@ function total() {
     var sub = Object.values(cart[i])[0]
     total = total + parseInt(sub);
   }
-  return console.log(total)
+  return total
   // write your code here
 }
 
