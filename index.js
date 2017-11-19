@@ -49,17 +49,21 @@ function total() {
 }
 
 function removeFromCart(item) {
+  console.log(cart);
   for(var i in cart){
     if(cart[i][item]) cart.splice(i,1); return;
   }
   console.log('That item is not in your cart.')
   // write your code here
+
+  console.log(cart);
 }
 
 function placeOrder(cardNumber) {
   // write your code here
 }
-//addToCart('poop')
-//addToCart('grass')
-//total()
+addToCart('poop')
+addToCart('grass')
+addToCart('emily')
+removeFromCart('grass')
 //console.log(cart)
