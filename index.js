@@ -54,7 +54,7 @@ function removeFromCart(item) {
     if(cart[i][item]) {
       console.log(i);
       cart.splice(i,1); return;
-      }   
+      }
   }
   console.log('That item is not in your cart.')
   // write your code here
