@@ -58,3 +58,4 @@ function placeOrder(cardNumber) {
 addToCart('poop')
 addToCart('grass')
 total()
+console.log(cart)
